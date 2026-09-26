@@ -1,23 +1,71 @@
 aid: aquamembranes
+
 name: Aquamembranes
-description: 'Aquamembranes is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://821.29a.mytemp.website/wp-content/uploads/2026/04/Logo.svg
+
+description: Aquamembranes provides optimized reverse osmosis technology with patented, precision printed elements that improve industrial RO
+  systems. Their solutions lower energy costs, reduce cleaning cycles, and boost water recovery without retrofits. The company serves global leaders
+  in water treatment, offering products, resources, and design software to enhance system performance.
+
 url: https://raw.githubusercontent.com/api-evangelist/aquamembranes/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
-- Company
-apis: []
+- Water Treatment
+- Reverse Osmosis
+- Clean Technology
+- Industrial Solutions
+- Sustainability
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/aquamembranes-hosts.yml
+- type: DomainSecurity
+  url: security/aquamembranes-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/aquamembranes
+  url: https://aquamembranes.com
+- type: Blog
+  url: https://aquamembranes.com/blog/
+- type: GettingStarted
+  url: https://aquamembranes.com/about/
+
+apis:
+- name: Aquamembranes API
+  description: API information referenced from the company's About page, though no machine-readable contract is available.
+  humanURL: https://aquamembranes.com/about/
+  baseURL: null
+  aid: aquamembranes:aquamembranes-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine-readable contract found on the site.
+  evidence:
+  - url: https://aquamembranes.com/about/
+    status: 200
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
