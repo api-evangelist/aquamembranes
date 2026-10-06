@@ -21,7 +21,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-25'
 
-modified: '2026-09-25'
+modified: '2026-10-06'
 
 tags:
 - Water Treatment
@@ -37,6 +37,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://aquamembranes.com/feed/
+  type: BlogRSS
 - type: Hosts
   url: hosts/aquamembranes-hosts.yml
 - type: DomainSecurity
